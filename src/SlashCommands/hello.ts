@@ -60,12 +60,12 @@ export const data = {
     });
     const year = req.body.data.options.find(async (obj: any) => {
       return obj.name === "year" && obj.type === 10;
-    }); // years.value = to their input
+    }); // year.value = to their input
 
     return res.send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: `balls.`,
+        content: `Testing to see if we get the correct data constants from the options.`,
       },
     });
   },
